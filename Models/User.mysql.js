@@ -3,6 +3,7 @@ const sql = require('../config/mysql');
 const User = function(User) {
     this.username = User.username;
     this.password = User.password;
+    this.role = User.role;
 }
 
 User.create = (newUser, result) => {
